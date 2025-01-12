@@ -25,7 +25,7 @@ function App() {
 								element={<Feed />}
 							></Route>
 							<Route
-								path="/login"
+								path="/profile"
 								element={<Profile />}
 							></Route>
 						</Route>

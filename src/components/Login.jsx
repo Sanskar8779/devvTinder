@@ -17,14 +17,14 @@ const Login = () => {
 			const res = await axios.post(
 				BASE_URL + "/login",
 				{
-					email,
-					password,
+					email: email,
+					password: password,
 				},
 				{
 					withCredentials: true,
 				}
 			);
-			dispatch(addUser(res.data.data));
+			dispatch(addUser(res.data));
 			return navigate("/");
 		} catch (err) {
 			console.error(err);
